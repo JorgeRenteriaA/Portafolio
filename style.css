@@ -362,12 +362,10 @@ Utiliza las referencias de los breakpoints @media abajo */
 
     .formcontato__form .formcontato__form-wrapper {
         width: 100%;
-        /* Cambiamos el ancho al 100% */
     }
 
     .formcontato__form {
         text-align: left;
-        /* Alineamos el texto a la izquierda */
     }
 }
 

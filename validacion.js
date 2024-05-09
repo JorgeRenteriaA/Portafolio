@@ -28,12 +28,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         } else if (!/^\S+@\S+\.\S+$/.test(email)) {
             alert('El correo electrónico no tiene un formato válido.');
         } else {
-            // Si todos los campos están llenos y validados, abrir WhatsApp Web y llenar el mensaje
-            const mensajeWhatsApp = `Hola, soy ${nombre}.\nMe gustaría ponerme en contacto contigo.\nMi email es ${email} \n${asunto}. \n${mensaje}`;
-            const numeroWhatsApp = '+525535099900'; // Número de teléfono de WhatsApp
-            const urlWhatsAppWeb = `https://web.whatsapp.com/send?phone=${numeroWhatsApp}&text=${encodeURIComponent(mensajeWhatsApp)}`;
-            window.open(urlWhatsAppWeb, '_blank');
-            alert('Por favor, complete la acción de enviar el mensaje de forma manual en WhatsApp Web.');
+            alert('Su mensaje cumple con el formato');
         }
     }
 });
