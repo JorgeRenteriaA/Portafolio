@@ -1,6 +1,6 @@
 export const portafolioData = [
     {
-        img: "https://github.com/JorgeRenteriaA/Portafolio/blob/main/assets/proyectos/alurageek.png",
+        img: "https://github.com/JorgeRenteriaA/Portafolio/blob/main/assets/proyectos/alurageek.png?raw=true",
         title: "AluraGeek",
         demo:"https://challenge-alura-geek-oli0p04ir-jorgerenteriaas-projects.vercel.app/",
         repo:"https://github.com/JorgeRenteriaA/ChallengeAluraGeek ",
