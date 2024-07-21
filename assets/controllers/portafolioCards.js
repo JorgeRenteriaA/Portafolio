@@ -3,6 +3,7 @@ import { portafolioData, skillsData } from "../data/portafolio-data.js";
 export const portafolioContainer = document.querySelector(".portafolio__container");
 const errorImage = document.querySelector(".error-image");
 
+// Verifica si estás en index.html
 const isIndexPage = window.location.pathname.includes("portafolio.html");
 
 // Si estás en index.html, limita los datos a los primeros 3 elementos
