@@ -29,7 +29,7 @@ export const portafolioData = [
         skills: ["python"],
     },
     {
-        img: "https://github.com/JorgeRenteriaA/Portafolio/blob/main/assets/proyectos/barberia_alura.png?raw=true",
+        img: "https://raw.githubusercontent.com/JorgeRenteriaA/Portafolio/main/assets/proyectos/encriptador.png",
         title: "Encriptador",
         demo:"https://jorgerenteriaa.github.io/ChallengeEncriptador/ ",
         repo:"https://github.com/JorgeRenteriaA/ChallengeEncriptador ",
