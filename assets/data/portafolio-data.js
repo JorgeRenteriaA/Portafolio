@@ -2,7 +2,7 @@ export const portafolioData = [
     {
         img: "https://raw.githubusercontent.com/JorgeRenteriaA/Portafolio/main/assets/proyectos/alurageek.png",
         title: "AluraGeek",
-        demo:"https://challenge-alura-geek-oli0p04ir-jorgerenteriaas-projects.vercel.app/",
+        demo:"https://challenge-alura-geek-xi.vercel.app/",
         repo:"https://github.com/JorgeRenteriaA/ChallengeAluraGeek ",
         skills: ["html", "css","javascript"],
     },
@@ -10,7 +10,7 @@ export const portafolioData = [
         
         img: "https://github.com/JorgeRenteriaA/Alura-flix/blob/main/Screenshots/Desktop%20banner.png?raw=true",
         title: "AluraFlix",
-        demo:"https://alura-flix-1mcd5hfu1-jorgerenteriaas-projects.vercel.app/",
+        demo:"https://alura-flix-nu-six.vercel.app/",
         repo:"https://github.com/JorgeRenteriaA/Alura-flix ",
         skills: ["react","html", "css","javascript"],
     },
