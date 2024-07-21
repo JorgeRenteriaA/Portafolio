@@ -1,0 +1,32 @@
+@import url("./style.css");
+
+section.academic {
+    padding: 30px;
+    text-align: center;
+    background-color: var(--color-fondo);
+}
+
+.academic__courses {
+    padding: 0% 15% 0% 15%;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.academic__title{
+    font-family: "Press Start 2P", system-ui;
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+
+.academic__courses__list img {
+    width: auto;
+    height: 130px;
+}
+
+.academic__courses__item__title,
+.academic__courses__item__subtitle p{
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Press Start 2P", system-ui;
+}

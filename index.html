@@ -1,334 +1,138 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Referencia de la hoja de estilo de Css -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Fonte del Proyecto Raleway -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <title> Portafolio Challenge</title>
+    <title>Portafolio de JorgeRenteriaA</title>
+    <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- CDN -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
+        integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" type="text/css" />
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/hero.css" />
+    <link rel="stylesheet" href="./assets/css/skills.css" />
+    <link rel="stylesheet" href="./assets/css/portafolio.css">
+    <link rel="stylesheet" href="./assets/css/about.css" />
+    <link rel="stylesheet" href="./assets/css/contac.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/animation.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Sección del Menú  -->
-    <div class="tudo">
-        <section class="menu">
-            <header class="menu__header">
-                <img src="assets\vector.png">
-                <h3 class="menu__title">Jorge Emanuel Rentería Alvarado</h3>
-            </header>
-            <nav>
-                <ul class="menu__list">
-                    <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
-                    <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                    <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                    <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-                    <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-                    <li class="menu__list__item"><a href="#contacto">jerarenteria@hotmail.com</a></li>
-                </ul>
-            </nav>
-        </section>
-        <!-- Sección del Header/Title/Hero -->
-        <section class="title">
-            <div class="title__div">
-                <img class="title__profile" src="assets\MiFoto.jpg">
-                <div class="title__container">
-                    <h2 class="title__bio">Hola, mi nombre es Jorge Emanuel Rentería Alvarado y soy desarollador web.</h2>
-                    <h3 class="title__subsection">Soy formado en la Facultad de Ingeniería de la Universidad Autónoma del Estado de México 
-                        y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</h3>
-                    <ul class="title__network">
-                        <!-- Pon los enlaces de tus redes sociales favoritas -->
-                        <li class="title__network__item"><a href="https://github.com/JorgeRenteriaA" target="_blank">Github
-                                <img src="assets\arrow.png"> </a></li>
-                        <li class="title__network__item"><a
-                                href="https://www.linkedin.com/in/jorge-emanuel-renter%C3%ADa-alvarado-b25b1b212/"
-                                target="_blank">Linkedin <img src="assets\arrow.png"></a></li>
-                        <li class="title__network__item"><a href="https://www.instagram.com/jeraemanuel/"
-                                target="_blank">Instagram <img src="assets\arrow.png"></a></li>
-                        <li class="title__network__item"><a href="">Currículo <img src="assets\arrow.png"></a></li>
-                    </ul>
+    <!--header-->
+    <header class="header blur">
+        <a href="#" class="header__link">
+            <img class="header__img" src="assets/images/icon.png" alt="Logo">
+            <h2 class="header__texto">JE<span class="title__span">RA</h2>
+        </a>
+        <nav class="menu nav">
+            <ul class="menu__list panel">
+                <li class="menu__item"><a class="menu__link active" href="#hero">Inicio</a></li>
+                <li class="menu__item"><a class="menu__link" href="#about">Sobre mí</a></li>
+                <li class="menu__item"><a class="menu__link" href="#portafolio">Portafolio</a></li>
+                <li class="menu__item"><a class="menu__link" href="#contac">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger hamburger--spring" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </header>
+
+    <!--main-->
+    <main>
+        <!--hero-->
+        <section class="hero" id="hero">
+            <div class="hero__container">
+                <div>
+                    <h1 class="hero__title">JE<span class="title__span">RA</span></h1>
+                    <h2 class="hero__description">Web Developer</h2>
+                </div>
+                <div class="skills">
+                    <div class="skills__container"></div>
                 </div>
             </div>
+            <img class="hero__img" src="assets/images/foto.jpg" alt="Foto de perfil">
         </section>
 
-        <!-- Sección sobre mi -->
-        <section class="about" id="sobre-mi">
+        <!--about-->
+        <section class="about" id="about">
             <div class="about__container">
-                <h3 class="about__title">Sobre mi</h3>
-                <p class="about__paragraph">Soy Jorge Emanuel Rentería Alvarado, estudiante de la carrera de Ingeniería en Computación
-                    en la Universidad Autónoma del Estado de México. Mi constante preparacion en tecnología y la
-                    programación me ha llevado a adquirir diversos conocimientos en distintas áreas:</p>
+                <h2 class="about__title">Sobre mí</h2>
+                <div class="about__text">
+                    <h2>Ingeniero en Computación.</h2>
+                </div>
+                <p class="about__description"> Mi nombre es Jorge Emanuel Rentería Alvarado. Soy ingeniero en computación egresado de la Universidad Autónoma del
+                    Estado de México (UAEMéx). Mi formación académica y experiencia práctica me han permitido
+                    desarrollar habilidades en diversas tecnologías, con un enfoque en el desarrollo web y análisis de
+                    datos.</p>
+                <p class="about__description">
+                    Soy parte del programa ORACLE ONE, completando cursos de Frontend con AluraLatam y una certificación en Análisis de Datos de Google
+                    en Coursera por parte de INROADS, y actualmente estoy cursando una certificación en Ciberseguridad de Google.
+                </p>
+
+
+                <div class="about__social">
+                    <a href="https://cvdesignr.com/p/6699cfc3b63ff" class="about__icon" target="_blank"><i class="about__icon bx"><iconify-icon icon="vscode-icons:file-type-pdf2"></iconify-icon></i></a>
+                    <a href="https://github.com/JorgeRenteriaA/" class="about__icon"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/jorgerenteriaa/" class="about__icon"><i
+                            class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+            <div class="about__media">
+                <img src="assets/images/icon.jpeg" alt="" class="about__img">
             </div>
         </section>
 
-        <!-- Sección de Skills -->
-        <section class="skills" id="skills">
-            <h3 class="skills__title">Skills</h3>
-            <div class="skills__line">
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"><img src="assets\htlm.png"></li>
-                        <li class="skills__name"> HTML 5</li>
-                    </ul>
-                </div>
+        <!--Portafolio-->
+        <section class="portafolio" id="portafolio">
+            <h2 class="portafolio__title">Portafolio</h2>
+            <div class="portafolio__container">
 
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\js_icon.png" alt=""></li>
-                        <li class="skills__name">Javascript</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\php_icon.png" alt=""></li>
-                        <li class="skills__name">PHP</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"><img src="assets\nodejs_icon.png" alt=""></li>
-                        <li class="skills__name">Node JS</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\react_icon.png" alt=""> </li>
-                        <li class="skills__name">React</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\css_icon.png" alt=""> </li>
-                        <li class="skills__name">CSS</li>
-                    </ul>
-                </div>
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\java_icon.png" alt=""> </li>
-                        <li class="skills__name">Java</li>
-                    </ul>
-                </div>
             </div>
+            <a href="portafolio.html" type="button" rel="nofollow noreferrer noopener" class="card__btn">Ver mas</a>
         </section>
-
-        <!-- Sección de Hobbies -->
-        <section class="hobbies" id="hobbies">
-            <h3 class="hobbies__title">Hobbies</h3>
-            <div class="hobbies__line">
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\guitar_icon.png" alt=""></li>
-                        <li class="hobbies__name">Tocar música</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"><img src="assets\tv_icon.png" alt=""></li>
-                        <li class="hobbies__name">Gaming</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\forkspoon_icon.png" alt=""> </li>
-                        <li class="hobbies__name">Cocinar</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección de Formación académica -->
-        <section class="academic" id="formacion">
-            <h2 class="academic__title">Formación académica</h2>
-            <div class="academic__courses">
-                <div class="academic__courses__box">
-                    <ul class="academic__courses__list">
-                        <!--Pon el logotipo de la institución de formación -->
-                        <li class="academic__courses__item__img"><img src="assets\alura_logo.png"></li>
-                        <li class="academic__courses__item__title">
-                            <h4>Formación Front End G6 - ONE</h4>
-                        </li>
-                        <li class="academic__courses__item__subtitle">
-                            <p>En curso Alura</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="academic__courses__box">
-                    <ul class="academic__courses__list">
-                        <!-- Pon el logotipo de la institución de formación -->
-                        <li class="academic__courses__item__img"><img src="assets\google_icon.png"></li>
-                        <li class="academic__courses__item__title">
-                            <h4>Análisis de datos</h4>
-                        </li>
-                        <li class="academic__courses__item__subtitle">
-                            <p>2024 - Certificados de carrera de Google</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="academic__courses__box">
-                    <ul class="academic__courses__list">
-                        <!-- Pon el logotipo de la institución de formación -->
-                        <li class="academic__courses__item__img"><img src="assets\uaemex.png"></li>
-                        <li class="academic__courses__item__title">
-                            <h4>Ingeniería en Computación</h4>
-                        </li>
-                        <li class="academic__courses__item__subtitle">
-                            <p>2018 - En curso UAEM</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="academic__courses__box">
-                    <ul class="academic__courses__list">
-                        <!-- Pon el logotipo de la institución de formación -->
-                        <li class="academic__courses__item__img"><img src="assets\red_por_ciberseguridad_icon.jpg"></li>
-                        <li class="academic__courses__item__title">
-                            <h4>Operación Aleph: SC-900</h4>
-                        </li>
-                        <li class="academic__courses__item__subtitle">
-                            <p>2024 - Red por la ciberseguridad</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="academic__courses__box">
-                    <ul class="academic__courses__list">
-                        <!-- Pon el logotipo de la institución de formación -->
-                        <li class="academic__courses__item__img"><img src="assets\aprende_icon.png"></li>
-                        <li class="academic__courses__item__title">
-                            <h4>Especialidad Tratemiento de datos,</h4>
-                            <h4>Técnico instalador de red de acceso</h4>
-                        </li>
-                        <li class="academic__courses__item__subtitle">
-                            <p>2024 - Capacitate para el empleo. Fundación Carlos Slim</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección de Experiencia Profesional/Proyectos-->
-        <section class="experience" id="xp">
-            <h2 class="experience__section__title">Experiencia Profesional</h2>
-            <div class="experience__box">
-                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="assets\juego_numero_secreto.png">
-                <div class="experience__info">
-                    <h2 class="experience__title">Juego Numero Secreto</h2>
-                    <h3 class="experience__text">Proyecto de Alura</h3>
-                    <div class="experience__description">
-                        <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                        <span class="experience__repo"><a href="https://github.com/JorgeRenteriaA/JuegoNumeroSecreto"
-                                target="_blank"><button class="experiencia__botao--repo">Repositorio</button></a></span>
-                        <span class="experience__demo"><a href="https://jorgerenteriaa.github.io/JuegoNumeroSecreto/"
-                                target="_blank"><button class="experience__botao--demo">Visitar</button></a></span>
-                    </div>
-                </div>
+        <a href="https://web.whatsapp.com/send?phone=+525535099900" target="_blank"><iconify-icon class="contact__icon" icon="logos:whatsapp-icon"></iconify-icon></a>
+    <!--footer-->
+    <footer class="footer">
+        <div class="footer__container footer__container--logo">
+            <a href="" class="footer__link">
+                <!-- <img class="footer__img" src="assets/images/icon.jpeg" alt="Logo"> -->
+                <h2 class="footer__texto">JE<span class="title__span">RA</span></h2>
+            </a>
+        </div>
+        <div class="footer__container footer__container--links">
+            <div class="footer_links">
+                <a class="footer__link" href="#">Acerca de mí</a>
+                <a class="footer__link">Contacto</a>
+                <a class="footer__link">Referencias</a>
             </div>
 
-            <div class="experience__box">
-                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="assets\barberia_alura.png">
-                <div class="experience__info">
-                    <h2 class="experience__title">Barbería Alura</h2>
-                    <h3 class="experience__text">Proyecto de Aula</h3>
-                    <div class="experience__description">
-                        <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                        <span class="experience__repo"><a href="https://github.com/JorgeRenteriaA/BarberiaAlura"
-                                target="_blank"><button class="experiencia__botao--repo">Repositorio</button></a></span>
-                        <span class="experience__demo"><a href="https://jorgerenteriaa.github.io/BarberiaAlura/"
-                                target="_blank"><button class="experience__botao--demo">Visitar</button></a></span>
-                    </div>
-                </div>
-            </div>
+        </div>
 
-            <div class="experience__box">
-                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="assets\encriptador.png">
-                <div class="experience__info">
-                    <h2 class="experience__title">Encriptador</h2>
-                    <h3 class="experience__text">Challenge Aula</h3>
-                    <div class="experience__description">
-                        <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                        <span class="experience__repo"><a href="https://github.com/JorgeRenteriaA/ChallengeEncriptador"
-                                target="_blank"><button class="experiencia__botao--repo">Repositorio</button></a></span>
-                        <span class="experience__demo"><a href="https://jorgerenteriaa.github.io/ChallengeEncriptador/"
-                                target="_blank"><button class="experience__botao--demo">Visitar</button></a></span>
-                    </div>
-                </div>
-            </div>
+        <div class="footer__container footer__container--social">
+            <ul class="footer__social--list">
+                <li class="footer__social github"><a href="">
+                        <iconify-icon icon="mdi:github" style="color: white"></iconify-icon>
+                    </a></li>
+                <li class="footer__social"><a href="">
+                        <iconify-icon icon="skill-icons:linkedin"></iconify-icon>
+                    </a></li>
+            </ul>
+        </div>
+    </footer>
 
-            <div class="experience__box">
-                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="assets\alura_play.png">
-                <div class="experience__info">
-                    <h2 class="experience__title">AluraPlay</h2>
-                    <h3 class="experience__text">Proyecto de Aula</h3>
-                    <div class="experience__description">
-                        <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                        <span class="experience__repo"><a href="https://github.com/JorgeRenteriaA/AluraPlay"
-                                target="_blank"><button class="experiencia__botao--repo">Repositorio</button></a></span>
-                        <span class="experience__demo"><a
-                                href="https://jorgerenteriaa.github.io/AluraPlay/" target="_blank"><button
-                                    class="experience__botao--demo">Visitar</button></a></span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección de Contacto -->
-        <section class="formcontato" id="contacto">
-            <div class="formcontato__contacto">
-                <div class="formcontato--esquerda">
-                    <img class="formcontato__img" src="assets\contact_image.png">
-                </div>
-                <div class="formcontato__text">
-                    <h2 class="formcontato__title">Contacto</h2>
-                    <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
-                    <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con
-                        usted lo antes posible. </h3>
-                    <form class="formcontato__form" name="form" id="contactForm">
-                        <div class="formcontato__form-wrapper">
-                            <input class="formcontato__input" type="text" name="nombre" required>
-                            <label for="">Nombre</label>
-                        </div>
-                        <div class="formcontato__form-wrapper">
-                            <input class="formcontato__input" type="email" name="email" required>
-                            <label for="">Email</label>
-                        </div>
-                        <div class="formcontato__form-wrapper">
-                            <input class="formcontato__input" type="text" name="asunto" required>
-                            <label for="">Asunto</label>
-                        </div>
-                        <div class="formcontato__form-wrapper">
-                            <input class="formcontato__input" type="text" name="mensaje" id="mensaje" required>
-                            <label for="">Mensaje</label>
-                        </div>
-
-                        <button type="submit" class="formcontato__botao" id="btn_enviar_mensaje">Enviar mensaje</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección de Footer -->
-        <section class="footer">
-            <div class="footer__rodape">
-                <p>Elaborado por Jorge Emanuel Rentería Alvarado</p>
-                <p>2024</p>
-            </div>
-        </section>
-    </div>
-    <!-- Script del documento JavaScript -->
-    <script src="validacion.js"></script>
+    <script src="modules.js" type="module"></script>
 </body>
 
 </html>
